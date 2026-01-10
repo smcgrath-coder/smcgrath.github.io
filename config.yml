@@ -52,7 +52,7 @@ params:
           enabled: true
           title: Scott P. McGrath, PhD, FAMIA
           subtitle: "Academic Program Manager at CITRIS Health, UC Berkeley. I work at the intersection of digital health, precision medicine, and medical education—exploring how informatics and AI can improve healthcare delivery and outcomes for underserved communities."
-          imageUrl: "headshot.jpeg"
+          imageUrl: "headshot.png"
           imageWidth: 160
           imageHeight: 160
           buttons:
