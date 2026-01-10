@@ -1,0 +1,92 @@
+/* Custom accent color: Medical Teal #0891b2 */
+/* This file should replace or augment assets/css/core/theme-vars.css */
+
+:root {
+    /* Light mode colors */
+    --primary: #0891b2;
+    --primary-hover: #0e7490;
+    --link-color: #0891b2;
+}
+
+.dark {
+    /* Dark mode colors */
+    --primary: #22d3ee;
+    --primary-hover: #67e8f9;
+    --link-color: #22d3ee;
+}
+
+/* Ensure links use the accent color */
+.post-content a,
+.post-description a,
+a:not(.button) {
+    color: var(--link-color);
+}
+
+.post-content a:hover,
+.post-description a:hover,
+a:not(.button):hover {
+    color: var(--primary-hover);
+}
+
+/* Button styling with accent */
+.button,
+.profile-mode .buttons a {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.button:hover,
+.profile-mode .buttons a:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+/* Social icons accent on hover */
+.social-icons a:hover svg {
+    fill: var(--primary);
+}
+
+/* Tags with accent color */
+.post-tags a {
+    color: var(--primary);
+}
+
+.post-tags a:hover {
+    color: var(--primary-hover);
+}
+
+/* Selection highlight */
+::selection {
+    background: rgba(8, 145, 178, 0.2);
+}
+
+/* Subtle fade-in animation for page content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main {
+    animation: fadeIn 0.4s ease-out;
+}
+
+/* Smooth hover transitions */
+a, .button, .social-icons a {
+    transition: all 0.2s ease;
+}
+
+/* Profile image subtle shadow */
+.profile-mode .profile_inner img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-mode .profile_inner img:hover {
+    box-shadow: 0 6px 30px rgba(8, 145, 178, 0.2);
+}
