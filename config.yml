@@ -1,41 +1,37 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+baseURL: "https://smcgrath.phd/"
+title: Scott P. McGrath, PhD
 theme: PaperMod
-
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
   pagerSize: 20
-
 taxonomies:
     tag: tags
-
 menu:
     main:
-        - name: Books
-          url: books/
-          weight: 5 
-        - name: Papers
-          url: papers/
+        - name: About
+          url: about/
+          weight: 1
+        - name: Publications
+          url: publications/
           weight: 2
-        - name: Courses
-          url: courses/
+        - name: Teaching
+          url: teaching/
           weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
-
+        - name: Projects
+          url: projects/
+          weight: 4
+        - name: Contact
+          url: contact/
+          weight: 5
 params:
-    description: "This website hosts Moritz-Maria von Igelfeld's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: Moritz-Maria von Igelfeld
+    description: "Scott P. McGrath, PhD - Medical informaticist, educator, and researcher focused on digital health, precision medicine, and AI in healthcare."
+    author: Scott P. McGrath
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
-    defaultTheme: light
+    defaultTheme: auto
     hideFooter: false
-    disableThemeToggle: true
+    disableThemeToggle: false
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
@@ -44,7 +40,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["publications","teaching","projects"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -54,61 +50,46 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
+          title: Scott P. McGrath, PhD, FAMIA
+          subtitle: "Academic Program Manager at CITRIS Health, UC Berkeley. I work at the intersection of digital health, precision medicine, and medical education—exploring how informatics and AI can improve healthcare delivery and outcomes for underserved communities."
+          imageUrl: "headshot.jpeg"
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Papers
-              url: papers/
-            - name: Data
-              url: data/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
-            - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-
+            - name: Publications
+              url: publications/
+            - name: Teaching
+              url: teaching/
+            - name: Projects
+              url: projects/
+            - name: CV
+              url: cv.pdf
+            - name: Contact
+              url: contact/
     socialIcons:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
+          url: mailto:smcgrath@berkeley.edu
+        - name: Bluesky
+          url: https://bsky.app/profile/smcgrath.phd
+        - name: Google Scholar
+          url: https://scholar.google.com/citations?user=bQkPd4sAAAAJ&hl=en
+        - name: ORCID
+          url: https://orcid.org/0000-0002-0065-726X
+        - name: GitHub
+          url: https://github.com/YOUR_GITHUB_USERNAME
         - name: Location
           url: location/
-        - name: Office Hours
-          url: officehours/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
-        - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: Twitter
-          url: https://x.com/pmichaillat
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
-
     assets:
         disableScrollBarStyle: true
     cover:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Scott P. McGrath"
       icon: favicon.ico
       iconHeight: 18
-
 markup:
     goldmark:
         renderer:
