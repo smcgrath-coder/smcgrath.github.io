@@ -92,6 +92,15 @@ description: "Research publications by Scott P. McGrath, PhD"
   margin-bottom: 0.3rem;
 }
 
+.pub-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  text-decoration: underline;
+}
+
 .pub-authors {
   font-size: 0.9rem;
   color: var(--secondary);
@@ -262,7 +271,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="ai genomics" data-type="journal" data-doi="10.1055/s-0044-1800755">
   <span class="pub-year">2024</span>
-  <div class="pub-title">Advancements in Precision Prevention: Top Bioinformatics and Translational Informatics Papers of 2023</div>
+  <div class="pub-title"><a href="https://doi.org/10.1055/s-0044-1800755" target="_blank">Advancements in Precision Prevention: Top Bioinformatics and Translational Informatics Papers of 2023</a></div>
   <div class="pub-authors">McGrath, S. · Benton, M.L.</div>
   <div class="pub-venue">IMIA Yearbook of Medical Informatics</div>
   <div class="pub-meta">
@@ -273,9 +282,9 @@ description: "Research publications by Scott P. McGrath, PhD"
   </div>
 </div>
 
-<div class="pub-item" data-topics="ai genomics" data-type="journal" data-doi="10.1093/jamia/ocae089">
+<div class="pub-item" data-topics="ai genomics" data-type="journal" data-doi="10.1093/jamia/ocae128">
   <span class="pub-year">2024</span>
-  <div class="pub-title">A Comparative Evaluation of ChatGPT 3.5 and ChatGPT 4 in Responses to Selected Genetics Questions</div>
+  <div class="pub-title"><a href="https://doi.org/10.1093/jamia/ocae128" target="_blank">A Comparative Evaluation of ChatGPT 3.5 and ChatGPT 4 in Responses to Selected Genetics Questions</a></div>
   <div class="pub-authors">McGrath, S. · Kozel, B. · Gracefo, S. · Sutherland, N. · Danford, C. · Walton, N.</div>
   <div class="pub-venue">Journal of the American Medical Informatics Association (JAMIA)</div>
   <div class="pub-meta">
@@ -283,16 +292,13 @@ description: "Research publications by Scott P. McGrath, PhD"
       <span class="pub-tag">AI</span>
       <span class="pub-tag">Genomics</span>
     </div>
-    <span class="pub-citations loading" data-doi="10.1093/jamia/ocae089">Loading...</span>
-    <div class="pub-links">
-      <a href="https://doi.org/10.1093/jamia/ocae089" target="_blank">DOI</a>
-    </div>
+    <span class="pub-citations loading" data-doi="10.1093/jamia/ocae128">Loading...</span>
   </div>
 </div>
 
 <div class="pub-item" data-topics="ai genomics" data-type="journal" data-doi="10.1093/jamia/ocad211">
   <span class="pub-year">2024</span>
-  <div class="pub-title">Enabling the Clinical Application of Artificial Intelligence in Genomics: A Perspective of the AMIA Genomics and Translational Bioinformatics Workgroup</div>
+  <div class="pub-title"><a href="https://doi.org/10.1093/jamia/ocad211" target="_blank">Enabling the Clinical Application of Artificial Intelligence in Genomics: A Perspective of the AMIA Genomics and Translational Bioinformatics Workgroup</a></div>
   <div class="pub-authors">Walton, N. · McGrath, S. · et al.</div>
   <div class="pub-venue">Journal of the American Medical Informatics Association (JAMIA)</div>
   <div class="pub-meta">
@@ -306,7 +312,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="ai genomics education" data-type="journal" data-doi="10.1101/2023.10.26.564260">
   <span class="pub-year">2023</span>
-  <div class="pub-title">Evaluating ChatGPT as an Agent for Providing Genetic Education</div>
+  <div class="pub-title"><a href="https://doi.org/10.1101/2023.10.26.564260" target="_blank">Evaluating ChatGPT as an Agent for Providing Genetic Education</a></div>
   <div class="pub-authors">Walton, N. · Kozel, B. · Gracefo, S. · Sutherland, N. · Danford, C. · McGrath, S.</div>
   <div class="pub-venue">BioRxiv (Preprint)</div>
   <div class="pub-meta">
@@ -321,7 +327,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="digital-health" data-type="journal" data-doi="10.1055/a-2110-4722">
   <span class="pub-year">2023</span>
-  <div class="pub-title">The ACTIVATE Digital Health Pilot Program for Diabetes and Hypertension in an Underserved and Rural Community</div>
+  <div class="pub-title"><a href="https://doi.org/10.1055/a-2110-4722" target="_blank">The ACTIVATE Digital Health Pilot Program for Diabetes and Hypertension in an Underserved and Rural Community</a></div>
   <div class="pub-authors">Kim, K.K. · McGrath, S. · Solorza, J.L. · Lindeman, D.</div>
   <div class="pub-venue">Applied Clinical Informatics</div>
   <div class="pub-meta">
@@ -334,7 +340,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="genomics" data-type="journal" data-doi="10.1055/s-0043-1768726">
   <span class="pub-year">2023</span>
-  <div class="pub-title">Intersecting Pathways in Bioinformatics and Translational Informatics: A One Health Perspective on Key Contributions and Future Directions</div>
+  <div class="pub-title"><a href="https://doi.org/10.1055/s-0043-1768726" target="_blank">Intersecting Pathways in Bioinformatics and Translational Informatics: A One Health Perspective on Key Contributions and Future Directions</a></div>
   <div class="pub-authors">Benton, M.L. · McGrath, S.</div>
   <div class="pub-venue">IMIA Yearbook of Medical Informatics</div>
   <div class="pub-meta">
@@ -347,7 +353,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="genomics" data-type="journal" data-doi="10.1055/s-0042-1742514">
   <span class="pub-year">2022</span>
-  <div class="pub-title">2021 Bioinformatics and Translational Informatics Best Papers</div>
+  <div class="pub-title"><a href="https://doi.org/10.1055/s-0042-1742514" target="_blank">2021 Bioinformatics and Translational Informatics Best Papers</a></div>
   <div class="pub-authors">Benton, M.L. · McGrath, S.</div>
   <div class="pub-venue">IMIA Yearbook of Medical Informatics</div>
   <div class="pub-meta">
@@ -360,7 +366,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="genomics" data-type="journal" data-doi="10.1055/s-0041-1726528">
   <span class="pub-year">2021</span>
-  <div class="pub-title">Predictions, Pivots, and a Pandemic: A Review of 2020's Top Translational Bioinformatics Publications</div>
+  <div class="pub-title"><a href="https://doi.org/10.1055/s-0041-1726528" target="_blank">Predictions, Pivots, and a Pandemic: A Review of 2020's Top Translational Bioinformatics Publications</a></div>
   <div class="pub-authors">McGrath, S. · Benton, M.L. · Tavakoli, M. · Tatonetti, N.P.</div>
   <div class="pub-venue">IMIA Yearbook of Medical Informatics</div>
   <div class="pub-meta">
@@ -373,7 +379,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="genomics" data-type="journal" data-doi="10.3389/fmed.2021.663014">
   <span class="pub-year">2021</span>
-  <div class="pub-title">Legal Challenges in Precision Medicine: What Duties Arising from Genetic and Genomic Testing Does a Physician Owe to Patients?</div>
+  <div class="pub-title"><a href="https://doi.org/10.3389/fmed.2021.663014" target="_blank">Legal Challenges in Precision Medicine: What Duties Arising from Genetic and Genomic Testing Does a Physician Owe to Patients?</a></div>
   <div class="pub-authors">McGrath, S. · Peabody, A. · Walton, D. · Walton, N.</div>
   <div class="pub-venue">Frontiers in Medicine</div>
   <div class="pub-meta">
@@ -381,15 +387,12 @@ description: "Research publications by Scott P. McGrath, PhD"
       <span class="pub-tag">Genomics</span>
     </div>
     <span class="pub-citations loading" data-doi="10.3389/fmed.2021.663014">Loading...</span>
-    <div class="pub-links">
-      <a href="https://doi.org/10.3389/fmed.2021.663014" target="_blank">DOI</a>
-    </div>
   </div>
 </div>
 
 <div class="pub-item" data-topics="education" data-type="journal" data-doi="10.5210/ojphi.v12i1.10696">
   <span class="pub-year">2020</span>
-  <div class="pub-title">Current Approaches and Trends in Public Health Informatics Education</div>
+  <div class="pub-title"><a href="https://doi.org/10.5210/ojphi.v12i1.10696" target="_blank">Current Approaches and Trends in Public Health Informatics Education</a></div>
   <div class="pub-authors">Schwartz, D. · McGrath, S. · Monsen, K. · Dixon, B.</div>
   <div class="pub-venue">Online Journal of Public Health Informatics</div>
   <div class="pub-meta">
@@ -402,7 +405,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="genomics dtc" data-type="journal" data-doi="10.1186/s12913-019-4679-8">
   <span class="pub-year">2019</span>
-  <div class="pub-title">Are Providers Prepared for Genomic Medicine: Interpretation of Direct-to-Consumer Genetic Testing (DTC-GT) Results and Genetic Self-Efficacy by Medical Professionals</div>
+  <div class="pub-title"><a href="https://doi.org/10.1186/s12913-019-4679-8" target="_blank">Are Providers Prepared for Genomic Medicine: Interpretation of Direct-to-Consumer Genetic Testing (DTC-GT) Results and Genetic Self-Efficacy by Medical Professionals</a></div>
   <div class="pub-authors">McGrath, S. · Walton, N. · Williams, M.S. · Kim, K.K. · Bastola, K.</div>
   <div class="pub-venue">BMC Health Services Research</div>
   <div class="pub-meta">
@@ -411,9 +414,6 @@ description: "Research publications by Scott P. McGrath, PhD"
       <span class="pub-tag">Consumer Genomics</span>
     </div>
     <span class="pub-citations loading" data-doi="10.1186/s12913-019-4679-8">Loading...</span>
-    <div class="pub-links">
-      <a href="https://doi.org/10.1186/s12913-019-4679-8" target="_blank">DOI</a>
-    </div>
   </div>
 </div>
 
@@ -431,7 +431,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="genomics education" data-type="journal" data-doi="10.1186/s12920-016-0183-8">
   <span class="pub-year">2016</span>
-  <div class="pub-title">Building Towards Precision Medicine: Empowering Medical Professionals for the Next Revolution</div>
+  <div class="pub-title"><a href="https://doi.org/10.1186/s12920-016-0183-8" target="_blank">Building Towards Precision Medicine: Empowering Medical Professionals for the Next Revolution</a></div>
   <div class="pub-authors">McGrath, S. · Ghersi, D.</div>
   <div class="pub-venue">BMC Medical Genomics</div>
   <div class="pub-meta">
@@ -440,15 +440,12 @@ description: "Research publications by Scott P. McGrath, PhD"
       <span class="pub-tag">Education</span>
     </div>
     <span class="pub-citations loading" data-doi="10.1186/s12920-016-0183-8">Loading...</span>
-    <div class="pub-links">
-      <a href="https://doi.org/10.1186/s12920-016-0183-8" target="_blank">DOI</a>
-    </div>
   </div>
 </div>
 
 <div class="pub-item" data-topics="dtc genomics" data-type="journal" data-doi="10.1159/000444477">
   <span class="pub-year">2016</span>
-  <div class="pub-title">Comprehension and Data-Sharing Behavior of Direct-to-Consumer Genetic Test Customers</div>
+  <div class="pub-title"><a href="https://doi.org/10.1159/000444477" target="_blank">Comprehension and Data-Sharing Behavior of Direct-to-Consumer Genetic Test Customers</a></div>
   <div class="pub-authors">McGrath, S.P. · Coleman, J. · Najjar, L. · Fruhling, A. · Bastola, D.R.</div>
   <div class="pub-venue">Public Health Genomics</div>
   <div class="pub-meta">
@@ -457,9 +454,6 @@ description: "Research publications by Scott P. McGrath, PhD"
       <span class="pub-tag">Genomics</span>
     </div>
     <span class="pub-citations loading" data-doi="10.1159/000444477">Loading...</span>
-    <div class="pub-links">
-      <a href="https://doi.org/10.1159/000444477" target="_blank">DOI</a>
-    </div>
   </div>
 </div>
 
@@ -540,7 +534,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="digital-health" data-type="conference" data-doi="10.1007/978-3-319-23344-4_36">
   <span class="pub-year">2015</span>
-  <div class="pub-title">Extending Concussion Evaluations with Telemedicine for Certified Athletic Trainers</div>
+  <div class="pub-title"><a href="https://doi.org/10.1007/978-3-319-23344-4_36" target="_blank">Extending Concussion Evaluations with Telemedicine for Certified Athletic Trainers</a></div>
   <div class="pub-authors">McGrath, S. · Bastola, D.K.</div>
   <div class="pub-venue">International Conference on Brain Informatics & Health</div>
   <div class="pub-meta">
@@ -553,7 +547,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="dtc genomics" data-type="conference" data-doi="10.1145/2649387.2660831">
   <span class="pub-year">2014</span>
-  <div class="pub-title">DTC Genetic Testing and Consumer Comprehension</div>
+  <div class="pub-title"><a href="https://doi.org/10.1145/2649387.2660831" target="_blank">DTC Genetic Testing and Consumer Comprehension</a></div>
   <div class="pub-authors">McGrath, S. · Bastola, D.K.</div>
   <div class="pub-venue">ACM Conference on Bioinformatics, Computational Biology, and Health Informatics</div>
   <div class="pub-meta">
@@ -567,7 +561,7 @@ description: "Research publications by Scott P. McGrath, PhD"
 
 <div class="pub-item" data-topics="" data-type="conference" data-doi="10.1109/DAPSE.2013.6628080">
   <span class="pub-year">2013</span>
-  <div class="pub-title">Concept to Commit: A Pattern Designed to Trace Code Changes from User Requests to Change Implementation</div>
+  <div class="pub-title"><a href="https://doi.org/10.1109/DAPSE.2013.6628080" target="_blank">Concept to Commit: A Pattern Designed to Trace Code Changes from User Requests to Change Implementation</a></div>
   <div class="pub-authors">McGrath, S. · Bastola, D.K. · Siy, H.</div>
   <div class="pub-venue">IEEE Data Analysis Patterns in Software Engineering (DAPSE)</div>
   <div class="pub-meta">
