@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rion's 10th Birthday — A Galactic Movie Party</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #f4ead8;
+    --ink-dim: #b6ad9a;
+    --bg-0: #07090f;
+    --bg-1: #0d1320;
+    --bg-2: #161e33;
+    --accent: #ffb340;
+    --accent-2: #5ad6a1;
+    --line: rgba(244, 234, 216, 0.18);
+    --type-scale: 1.05;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #04060b; color: var(--ink); font-family: 'Space Grotesk', system-ui, sans-serif; }
+
+  .page {
+    width: min(100%, 900px);
+    margin: 32px auto;
+    aspect-ratio: 8.5 / 11;
+    position: relative;
+    background:
+      radial-gradient(1200px 700px at 85% 0%, rgba(255, 179, 64, 0.18), transparent 60%),
+      radial-gradient(900px 600px at 0% 100%, rgba(90, 214, 161, 0.10), transparent 60%),
+      linear-gradient(180deg, #060812 0%, #0a0f1e 45%, #060812 100%);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.02) inset;
+  }
+
+  .stars, .stars::before, .stars::after {
+    position: absolute; inset: 0; pointer-events: none;
+  }
+  .stars::before {
+    content: "";
+    background-image:
+      radial-gradient(1px 1px at 20% 12%, #fff, transparent 60%),
+      radial-gradient(1px 1px at 75% 8%, #fff, transparent 60%),
+      radial-gradient(1.5px 1.5px at 38% 30%, #ffd9a0, transparent 60%),
+      radial-gradient(1px 1px at 55% 22%, #fff, transparent 60%),
+      radial-gradient(1px 1px at 88% 38%, #fff, transparent 60%),
+      radial-gradient(1px 1px at 12% 45%, #fff, transparent 60%),
+      radial-gradient(1.2px 1.2px at 28% 62%, #fff, transparent 60%),
+      radial-gradient(1px 1px at 62% 70%, #b8e8ff, transparent 60%),
+      radial-gradient(1px 1px at 80% 85%, #fff, transparent 60%),
+      radial-gradient(1px 1px at 8% 88%, #fff, transparent 60%),
+      radial-gradient(1px 1px at 48% 93%, #fff, transparent 60%),
+      radial-gradient(1.2px 1.2px at 92% 60%, #ffd9a0, transparent 60%);
+    opacity: 0.85;
+  }
+  .stars::after {
+    content: "";
+    background-image:
+      radial-gradient(0.6px 0.6px at 14% 20%, #fff, transparent 60%),
+      radial-gradient(0.6px 0.6px at 24% 40%, #fff, transparent 60%),
+      radial-gradient(0.6px 0.6px at 44% 12%, #fff, transparent 60%),
+      radial-gradient(0.6px 0.6px at 66% 36%, #fff, transparent 60%),
+      radial-gradient(0.6px 0.6px at 70% 58%, #fff, transparent 60%),
+      radial-gradient(0.6px 0.6px at 30% 78%, #fff, transparent 60%),
+      radial-gradient(0.6px 0.6px at 90% 18%, #fff, transparent 60%),
+      radial-gradient(0.6px 0.6px at 96% 92%, #fff, transparent 60%);
+    opacity: 0.55;
+  }
+
+  .frame {
+    position: absolute;
+    inset: 28px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 36px 40px 30px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 22px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    border-bottom: 1px dashed var(--line);
+    padding-bottom: 18px;
+  }
+  .badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(10px * var(--type-scale));
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+  .stamp {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(9px * var(--type-scale));
+    letter-spacing: 0.18em;
+    color: var(--ink-dim);
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.6;
+  }
+  .stamp .age {
+    display: inline-block;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 6px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 36px;
+    align-items: center;
+  }
+
+  .title-block { display: flex; flex-direction: column; gap: 18px; }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(11px * var(--type-scale));
+    letter-spacing: 0.4em;
+    color: var(--ink-dim);
+    text-transform: uppercase;
+  }
+  h1.title {
+    font-family: 'Anton', 'Arial Narrow', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: calc(clamp(44px, 7.2vw, 86px) * var(--type-scale));
+    line-height: 0.92;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-shadow: 0 2px 0 rgba(0,0,0,0.4);
+  }
+  h1.title .accent { color: var(--accent); }
+  h1.title .small {
+    display: block;
+    font-size: 0.42em;
+    color: var(--ink-dim);
+    letter-spacing: 0.18em;
+    margin-top: 8px;
+  }
+  .blurb {
+    font-size: calc(15px * var(--type-scale));
+    line-height: 1.6;
+    color: var(--ink-dim);
+    max-width: 38ch;
+  }
+  .blurb b { color: var(--ink); font-weight: 600; }
+
+  .poster-wrap {
+    position: relative;
+    padding: 14px;
+    border: 1px solid var(--line);
+    background:
+      linear-gradient(180deg, rgba(255,179,64,0.08), rgba(0,0,0,0)) ,
+      rgba(255,255,255,0.02);
+    border-radius: 2px;
+  }
+  .poster-wrap::before,
+  .poster-wrap::after {
+    content: "";
+    position: absolute;
+    width: 14px; height: 14px;
+    border: 1px solid var(--accent);
+  }
+  .poster-wrap::before { top: -1px; left: -1px; border-right: none; border-bottom: none; }
+  .poster-wrap::after  { bottom: -1px; right: -1px; border-left: none; border-top: none; }
+  .poster {
+    width: 100%;
+    display: block;
+    border-radius: 1px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  }
+  .poster-cap {
+    margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(9.5px * var(--type-scale));
+    letter-spacing: 0.18em;
+    color: var(--ink-dim);
+    text-transform: uppercase;
+    display: flex; justify-content: space-between;
+  }
+
+  .details {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 14px 24px;
+    border-top: 1px dashed var(--line);
+    border-bottom: 1px dashed var(--line);
+    padding: 20px 0;
+  }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(9px * var(--type-scale));
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+  }
+  .field .val {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: calc(17px * var(--type-scale));
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.25;
+  }
+  .field .val .sub { display: block; font-weight: 400; color: var(--ink-dim); font-size: calc(13px * var(--type-scale)); margin-top: 3px; }
+
+  .f-date  { grid-column: span 4; }
+  .f-time  { grid-column: span 4; }
+  .f-run   { grid-column: span 4; }
+  .f-feat  { grid-column: span 7; }
+  .f-place { grid-column: span 5; }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: end;
+  }
+  .rsvp {
+    background: rgba(255, 179, 64, 0.08);
+    border: 1px solid rgba(255, 179, 64, 0.4);
+    border-radius: 4px;
+    padding: 18px 20px;
+    position: relative;
+  }
+  .rsvp .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(10px * var(--type-scale));
+    letter-spacing: 0.3em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  .rsvp .name {
+    font-family: 'Anton', sans-serif;
+    font-size: calc(28px * var(--type-scale));
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 4px 0 2px;
+    color: var(--ink);
+  }
+  .rsvp .phone {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(15px * var(--type-scale));
+    color: var(--ink);
+    letter-spacing: 0.04em;
+  }
+  .rsvp .by {
+    margin-top: 8px;
+    font-size: calc(12.5px * var(--type-scale));
+    color: var(--ink-dim);
+  }
+  .rsvp .by b { color: var(--accent); font-weight: 600; }
+
+  .perks {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(11px * var(--type-scale));
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-dim);
+    line-height: 1.9;
+    text-align: right;
+  }
+  .perks .row { display: flex; justify-content: flex-end; align-items: center; gap: 10px; }
+  .perks .row::before { content: ""; width: 18px; height: 1px; background: var(--line); }
+  .perks .note { color: var(--accent-2); font-size: calc(10px * var(--type-scale)); margin-top: 6px; }
+
+  .corner {
+    position: absolute;
+    width: 22px; height: 22px;
+    border: 1px solid var(--accent);
+  }
+  .corner.tl { top: 10px; left: 10px; border-right: none; border-bottom: none; }
+  .corner.tr { top: 10px; right: 10px; border-left: none; border-bottom: none; }
+  .corner.bl { bottom: 10px; left: 10px; border-right: none; border-top: none; }
+  .corner.br { bottom: 10px; right: 10px; border-left: none; border-top: none; }
+
+  .streak {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.6;
+    transform: rotate(-18deg);
+    transform-origin: left center;
+  }
+  .streak.s1 { top: 14%; left: 6%; width: 28%; }
+  .streak.s2 { top: 52%; left: 60%; width: 22%; opacity: 0.35; }
+
+  @media (max-width: 760px) {
+    .page { aspect-ratio: auto; }
+    .hero { grid-template-columns: 1fr; }
+    .details { grid-template-columns: repeat(6, 1fr); }
+    .f-date, .f-time, .f-run { grid-column: span 6; }
+    .f-feat, .f-place { grid-column: span 6; }
+    .footer { grid-template-columns: 1fr; }
+    .perks { text-align: left; }
+    .perks .row { justify-content: flex-start; }
+    .perks .row::before { display: none; }
+    .frame { padding: 24px; inset: 14px; }
+  }
+
+  @media print {
+    body { background: #000; }
+    .page { margin: 0; box-shadow: none; width: 100%; height: 100vh; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="streak s1"></div>
+    <div class="streak s2"></div>
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+
+    <div class="frame">
+      <div class="header">
+        <div class="badge">
+          <span class="dot"></span>
+          Transmission &middot; Inbound
+        </div>
+        <div class="stamp">
+          File &#8470; R-10 &middot; Galaxy Cinema Division<br/>
+          Clearance <span class="age">Age 10</span>
+        </div>
+      </div>
+
+      <div class="hero">
+        <div class="title-block">
+          <div class="eyebrow">You are cordially invited to</div>
+          <h1 class="title">
+            Rion's<br/>
+            <span class="accent">Tenth</span><br/>
+            Birthday
+            <span class="small">A Movie Theater Mission</span>
+          </h1>
+          <p class="blurb">
+            Suit up, padawans. We're heading to the big screen to catch the brand-new
+            <b>Mandalorian &amp; Grogu</b> feature &mdash; popcorn, fountain drinks, and reclining seats included.
+            Reply quickly so we can hold a spot in our row.
+          </p>
+        </div>
+
+        <div class="poster-wrap">
+          <img class="poster" src="assets/movie-poster.png" alt="The Mandalorian and Grogu — theatrical poster" />
+          <div class="poster-cap">
+            <span>Now Playing</span>
+            <span>Reel 01 / 01</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="field f-date">
+          <span class="lbl">Date</span>
+          <span class="val">Saturday, May 30<span class="sub">2026</span></span>
+        </div>
+        <div class="field f-time">
+          <span class="lbl">Showtime</span>
+          <span class="val">12:15 PM<span class="sub">Meet us in the lobby around 12:10-12:15</span></span>
+        </div>
+        <div class="field f-run">
+          <span class="lbl">Run Time</span>
+          <span class="val">2 hr 12 min<span class="sub">Wraps ~2:30 PM</span></span>
+        </div>
+        <div class="field f-feat">
+          <span class="lbl">Now Showing</span>
+          <span class="val">Star Wars: The Mandalorian &amp; Grogu<span class="sub">Theatrical release &middot; Family friendly</span></span>
+        </div>
+        <div class="field f-place">
+          <span class="lbl">Location</span>
+          <span class="val">AMC Dine-In Southgate 9<span class="sub">Dine-in reclining theater</span></span>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="rsvp">
+          <div class="lbl">RSVP &middot; Required for seat hold</div>
+          <div class="name">Melanie McGrath</div>
+          <div class="phone">(919) 308-4767</div>
+          <div class="by">Please reply by <b>Tuesday, May 26</b> so we can reserve seats together.</div>
+        </div>
+
+        <div class="perks">
+          <div class="row">Drinks &middot; provided</div>
+          <div class="row">Popcorn &middot; unlimited vibes</div>
+          <div class="row">Reclining seats</div>
+          <div class="note">Let us know about any dietary concerns &#8600;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
