@@ -193,6 +193,19 @@ description: "Research publications by Scott P. McGrath, PhD"
     margin-top: 1rem;
   }
 }
+
+.featured-research { margin: 0 0 2.5rem 0; }
+.featured-research-label { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); margin-bottom: 0.75rem; }
+.featured-card { position: relative; background: var(--entry); border: 1px solid rgba(8, 145, 178, 0.25); border-left: 4px solid var(--primary); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 16px rgba(8, 145, 178, 0.10); }
+.featured-card .featured-badge { position: absolute; top: 1.25rem; right: 1.25rem; background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%); color: #fff; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 20px; }
+.featured-card h3 { margin: 0 1.5rem 0.4rem 0; font-size: 1.2rem; line-height: 1.35; color: var(--primary); }
+.featured-card .featured-authors { font-size: 0.9rem; color: var(--secondary); margin-bottom: 0.2rem; }
+.featured-card .featured-venue { font-size: 0.85rem; font-style: italic; color: var(--secondary); margin-bottom: 0.75rem; }
+.featured-card .featured-summary { font-size: 0.92rem; line-height: 1.6; color: var(--secondary); margin: 0 0 1rem 0; }
+.featured-card .featured-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.featured-card .featured-link { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.85rem; background: rgba(8, 145, 178, 0.1); color: var(--primary); border-radius: 6px; font-size: 0.85rem; text-decoration: none; transition: background 0.2s ease; }
+.featured-card .featured-link:hover { background: rgba(8, 145, 178, 0.2); text-decoration: none; }
+.featured-card .featured-link svg { width: 15px; height: 15px; }
 </style>
 
 <div class="metrics-summary">
@@ -205,11 +218,35 @@ description: "Research publications by Scott P. McGrath, PhD"
     <div class="metric-label">h-index</div>
   </div>
   <div class="metric-box">
-    <div class="metric-value" id="pub-count">31</div>
+    <div class="metric-value" id="pub-count">32</div>
     <div class="metric-label">Publications</div>
   </div>
   <div class="metrics-note">
-    Data from <a href="https://scholar.google.com/citations?user=bQkPd4sAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    Data from <a href="https://scholar.google.com/citations?user=kNIn_y0AAAAJ&hl=en" target="_blank">Google Scholar</a>
+  </div>
+</div>
+
+<div class="featured-research">
+  <div class="featured-research-label">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+    Featured Research
+  </div>
+  <div class="featured-card">
+    <span class="featured-badge">New</span>
+    <h3>AI-PACE: A Framework for Integrating AI into Medical Education</h3>
+    <div class="featured-authors">McGrath, S.P. · Kim, K.K. · Johl, K. · Wang, H. · Anderson, N.</div>
+    <div class="featured-venue">npj Digital Medicine (2026)</div>
+    <p class="featured-summary">An integrative review of 23 peer-reviewed articles (2016–2025) identifies three structural gaps in medical AI education: short-term interventions without reinforcement, a bias toward procedural specialties, and consistent under-representation of the affective domain. AI-PACE (Psychomotor, Affective, Cognitive, Embedded) is a Bloom's Taxonomy–grounded framework that organizes AI competencies longitudinally across undergraduate, graduate, and continuing medical education.</p>
+    <div class="featured-links">
+      <a href="https://doi.org/10.1038/s41746-026-02768-2" target="_blank" class="featured-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        Read Paper
+      </a>
+      <a href="https://www.nature.com/articles/s41746-026-02768-2.pdf" target="_blank" class="featured-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        PDF
+      </a>
+    </div>
   </div>
 </div>
 
@@ -243,6 +280,23 @@ description: "Research publications by Scott P. McGrath, PhD"
 <div id="publications-list">
 
 <!-- JOURNAL ARTICLES -->
+
+<div class="pub-item" data-topics="ai education" data-type="journal" data-doi="10.1038/s41746-026-02768-2">
+  <span class="pub-year">2026</span>
+  <div class="pub-title">AI-PACE: A Framework for Integrating AI into Medical Education</div>
+  <div class="pub-authors">McGrath, S.P. · Kim, K.K. · Johl, K. · Wang, H. · Anderson, N.</div>
+  <div class="pub-venue">npj Digital Medicine</div>
+  <div class="pub-meta">
+    <div class="pub-tags">
+      <span class="pub-tag">AI</span>
+      <span class="pub-tag">Education</span>
+    </div>
+    <span class="pub-citations loading" data-doi="10.1038/s41746-026-02768-2">Loading...</span>
+    <div class="pub-links">
+      <a href="https://doi.org/10.1038/s41746-026-02768-2" target="_blank">DOI</a>
+    </div>
+  </div>
+</div>
 
 <div class="pub-item" data-topics="ai genomics" data-type="journal">
   <span class="pub-year">2025</span>

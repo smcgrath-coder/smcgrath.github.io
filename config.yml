@@ -76,7 +76,7 @@ params:
         - name: Bluesky
           url: https://bsky.app/profile/smcgrath.phd
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=bQkPd4sAAAAJ&hl=en
+          url: https://scholar.google.com/citations?user=kNIn_y0AAAAJ&hl=en
         - name: ORCID
           url: https://orcid.org/0000-0002-0065-726X
         - name: GitHub

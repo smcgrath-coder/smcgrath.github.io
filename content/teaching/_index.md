@@ -9,6 +9,15 @@ I believe informatics education should be practical, accessible, and grounded in
 
 ## Current Courses
 
+### AI in Healthcare: Foundations for Clinical Practice
+**CITRIS Health, UC Berkeley** · Professional / Continuing Education
+
+A professional development curriculum that prepares clinicians and healthcare professionals to understand, evaluate, and responsibly integrate artificial intelligence into their practice. Rather than treating AI as a one-time topic, the course is built on the **AI-PACE framework** (Psychomotor, Affective, Cognitive, Embedded)—a Bloom's Taxonomy–grounded model I co-developed to organize AI competencies longitudinally across a career. Participants move from foundational concepts and hands-on tool use to the judgment, ethics, and affective skills needed to apply AI safely at the point of care.
+
+**Topics:** Foundations of AI and machine learning in medicine, large language models and generative AI in clinical settings, critical appraisal and validation of AI tools, bias, safety, and ethics, human–AI collaboration and workflow integration, regulatory and governance considerations
+
+---
+
 ### IHS 6801: Health Information Systems and Applications
 **Ohio University** · Graduate · Online
 

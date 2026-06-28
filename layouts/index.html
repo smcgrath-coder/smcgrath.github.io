@@ -1,0 +1,50 @@
+{{- define "main" }}
+
+{{- if (and site.Params.profileMode.enabled .IsHome) }}
+{{- partial "index_profile.html" . }}
+
+<style>
+.home-featured { margin: 0 auto 2rem auto; }
+.home-featured .hf-label { display: flex; align-items: center; justify-content: center; gap: 0.45rem; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.09em; color: var(--primary); margin-bottom: 1rem; }
+.home-featured .hf-card { position: relative; background: var(--entry); border: 1px solid rgba(8, 145, 178, 0.25); border-left: 4px solid var(--primary); border-radius: 14px; padding: 1.6rem; box-shadow: 0 6px 22px rgba(8, 145, 178, 0.10); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.home-featured .hf-card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(8, 145, 178, 0.16); }
+.home-featured .hf-badge { position: absolute; top: 1.25rem; right: 1.25rem; background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%); color: #fff; font-size: 0.7rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 20px; }
+.home-featured .hf-card h3 { margin: 0 1.5rem 0.4rem 0; font-size: 1.25rem; line-height: 1.35; color: var(--primary); }
+.home-featured .hf-authors { font-size: 0.9rem; color: var(--secondary); margin-bottom: 0.2rem; }
+.home-featured .hf-venue { font-size: 0.85rem; font-style: italic; color: var(--secondary); margin-bottom: 0.8rem; }
+.home-featured .hf-summary { font-size: 0.93rem; line-height: 1.6; color: var(--secondary); margin: 0 0 1.1rem 0; }
+.home-featured .hf-links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.home-featured .hf-link { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.9rem; background: rgba(8, 145, 178, 0.1); color: var(--primary); border-radius: 6px; font-size: 0.85rem; text-decoration: none; transition: background 0.2s ease; }
+.home-featured .hf-link:hover { background: rgba(8, 145, 178, 0.2); text-decoration: none; }
+.home-featured .hf-link svg { width: 15px; height: 15px; }
+</style>
+
+<section class="home-featured">
+  <div class="hf-label">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M12 2l2.4 7.4H22l-6 4.6 2.3 7.4L12 17l-6.3 4.4L8 14 2 9.4h7.6z"/></svg>
+    Featured Research
+  </div>
+  <div class="hf-card">
+    <span class="hf-badge">New</span>
+    <h3>AI-PACE: A Framework for Integrating AI into Medical Education</h3>
+    <div class="hf-authors">McGrath, S.P. · Kim, K.K. · Johl, K. · Wang, H. · Anderson, N.</div>
+    <div class="hf-venue">npj Digital Medicine (2026)</div>
+    <p class="hf-summary">A Bloom's Taxonomy&ndash;grounded framework&mdash;Psychomotor, Affective, Cognitive, Embedded&mdash;that organizes AI competencies longitudinally across undergraduate, graduate, and continuing medical education, addressing the fragmented, specialty-skewed state of medical AI training.</p>
+    <div class="hf-links">
+      <a href="https://doi.org/10.1038/s41746-026-02768-2" target="_blank" rel="noopener" class="hf-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+        Read Paper
+      </a>
+      <a href="{{ "publications/" | absURL }}" class="hf-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        All Publications
+      </a>
+    </div>
+  </div>
+</section>
+
+{{- else }}
+{{- partial "index_profile.html" . }}
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}
