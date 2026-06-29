@@ -185,6 +185,26 @@ A selection of projects I've led or contributed to, spanning digital health, res
 <div class="projects-grid">
 <div class="project-card">
 <div class="project-header">
+<h3>AIM-AHEAD Bridge2AI: Interpretable AI for the NICU</h3>
+<div class="subtitle">Clinical AI · Interpretable Machine Learning · Bridge2AI for Clinical Care</div>
+</div>
+<div class="project-body">
+<p>Selected for the NIH <strong>AIM-AHEAD Bridge2AI for Clinical Care Training Program</strong> (Cohort 2)—a competitive program that gives trainees hands-on experience working with real, multi-institutional patient data—I served as <strong>team lead</strong> for a project predicting how long premature infants stay in the NICU. Rather than chase accuracy with a black box, our team built a "glass-box" pipeline on a multi-site OMOP dataset, pairing an additive model (EBM) with explainable gradient boosting (XGBoost + SHAP) so clinicians can see which factors drive a baby's hospital stay. Both methods independently converged on the same clinically plausible drivers, and the interpretable approach surfaced data-quality issues early—pointing toward a transferable framework for trustworthy clinical AI in neonatal care.</p>
+<p><strong>Role:</strong> Team Lead · NIH AIM-AHEAD Bridge2AI for Clinical Care Training Program, Cohort 2</p>
+<div class="project-links">
+<a href="/aim-ahead-nicu-poster.pdf" target="_blank" class="project-link">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+View Poster
+</a>
+<a href="https://www.aim-ahead.net/programs/aim-ahead-bridge2ai-for-clinical-care-training-program/" target="_blank" class="project-link">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+About the Program
+</a>
+</div>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header">
 <h3>ACTIVATE / Health Tequity</h3>
 <div class="subtitle">Digital Health · Remote Patient Monitoring</div>
 </div>
